@@ -1,9 +1,10 @@
 
 
 
+console.log("\n %c ꦿ᭄꯭꯭随꯭性꯭এ. "+" %c https://hi.sb \n\n","background: #35495e; padding: 1px; border-radius: 3px 0 0 3px; color: #fff","background: #555; padding: 1px; border-radius: 0 3px 3px 0; color: #ff7F50")
 
 
-//返回顶部
+
 $("#top_to").hide();$(window).scroll(function(){if($(this).scrollTop()>200){$("#top_to").fadeIn(100)}else{$("#top_to").fadeOut(200)}});$("#top_to").click(function(){$("body,html").animate({scrollTop:0},400);return false});
 
 if (Config.dark === 'true') {   

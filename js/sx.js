@@ -2,50 +2,6 @@
 
 
 
-var domain = window.location.hostname;
-
-
-
-function readTextFile(fileUrl) {
-  var xhr = new XMLHttpRequest();
-  xhr.open("GET", fileUrl, true);
-  xhr.onreadystatechange = function () {
-    if (xhr.readyState === 4 && xhr.status === 200) {
-      var fileContent = xhr.responseText;
-      var lines = fileContent.split("\n");
-      for (var i = 0; i < lines.length; i++) {
-        var line = lines[i];
-        // 在这里处理每一行的内容
-        console.log(line);
-        
-       
-if(domain === line){
-    console.log("✔️");
-alert("哟，客官 里边请里边请！");
-
-location.replace("//hi.sb");
-} else {
-    console.log("×");
-     }
- 
-        
-        
-        
-        
-      }
-    }
-  };
-  xhr.send();
-}
-
-readTextFile("https://md.hi.sb");
-
-
-
-
-
-
-
 
 //返回顶部
 $("#top_to").hide();$(window).scroll(function(){if($(this).scrollTop()>200){$("#top_to").fadeIn(100)}else{$("#top_to").fadeOut(200)}});$("#top_to").click(function(){$("body,html").animate({scrollTop:0},400);return false});
